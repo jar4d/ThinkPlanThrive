@@ -2,9 +2,9 @@
   // Server authentication info
   "servers": [
     {
-      "host": "178.62.11.150", //"46.101.14.10",
+      "host": "139.59.185.9", //"46.101.14.10",
       "username": "root",
-      "password": "thinkplanthrive",
+      //"password": "thinkplanthrive",
       // or pem file (ssh based authentication)
       "pem": "~/.ssh/id_rsa"
     }

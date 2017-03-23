@@ -2,80 +2,123 @@ import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
-
-Template.body.onRendered(function(){
-    this.$('.mailmodalbutton').leanModal();
-    this.$('.cvmodalbutton').leanModal();
-    this.$('.aboutmodalbutton').leanModal();     
-    this.$('.collapsible').collapsible({accordion : false });
-   
-})
-
         
+Router.route('/', function () {
+    this.render('home');
+    document.title = 'Think. Plan. Thrive.';
+  
+});
 
+Router.route('/jungle', function () {
+  this.render('ideaSafari');
+});
 
-Template.body.events({
-  'click .mailmodalbutton': function (event) {
-    event.preventDefault();
-
-    $('.mailmodalbutton').leanModal({
-      dismissible: true, // Modal can be dismissed by clicking outside of the modal
-      opacity: .5, // Opacity of modal background
-      in_duration: 100, // Transition in duration
-      out_duration: 100, // Transition out duration
-      
-    });
-  },
-
-  'click .cvmodalbutton': function (event) {
-    event.preventDefault();
-
-    $('.cvmodalbutton').leanModal({
-      dismissible: true, // Modal can be dismissed by clicking outside of the modal
-      opacity: .5, // Opacity of modal background
-      in_duration: 100, // Transition in duration
-      out_duration: 100, // Transition out duration
-      
-    });
-  },
-
-  'click .aboutmodalbutton': function (event) {
-    event.preventDefault();
-
-    $('.aboutmodalbutton').leanModal({
-      dismissible: true, // Modal can be dismissed by clicking outside of the modal
-      opacity: .5, // Opacity of modal background
-      in_duration: 100, // Transition in duration
-      out_duration: 100, // Transition out duration
-      
-    });
-  },
-
-  'submit mailform': function(){
-    var firstName = target.firstname.value;
-    var lastName = target.lastname.value;
-    var message = new String("FROM: " + firstName + " " + lastName + "MESSAGE: " + event.target.message );
-    var email = target.email.value;
-    $('.mailmodalbutton').closeModal();
-    Meteor.call('sendEmail',email,message);
-	},
-
-  'submit cvform': function(){
-    var message = "Simple CV request";
-    var email = target.email.value;
-    $('.mailmodalbutton').closeModal();
-    Meteor.call('sendEmail',email,message);
-  }
-
+Router.route('/beta', function () {
+  this.render('beta');
 });
 
 
-Template.body.onRendered(function() { 
+Template.home.onRendered(function() { 
     initSlider();
     initQuoteSlider();
     initPackSlider();
-    
+    initGrid();
+
   });
+
+Template.beta.onRendered(function() { 
+    initSlider();
+    initQuoteSlider();
+    initPackSlider();
+    initGrid();
+  });
+
+Template.ideaSafari.onRendered(function() { 
+    initSlider();
+    initQuoteSlider();
+    initPackSlider();
+    initGrid();
+
+
+  });
+
+Template.mainSlider.onRendered(function(){
+  //  $("#responsive_headline").fitText();    
+});
+
+
+initGrid = function() {
+        console.log("initgrid");
+
+/*
+      var bigGridBox4 = $("#grid-slider").find('.bigGridBox4');
+
+      bigGridBox4.owlCarousel({
+        items:1,
+        loop:true,
+        autoplay:true,
+        margin: 10,
+        //animateOut: 'slideOut',
+        //animateIn: 'slideIn',       
+        dots: false,
+        autoplayHoverPause:true,
+        autoplayTimeout:10000
+
+  }); 
+*/
+      var bigGridBox3 = $("#grid-slider").find('.bigGridBox3');
+
+      bigGridBox3.owlCarousel({
+        items:1,
+        loop:true,
+        autoplay:true,
+        margin: 10,
+        animateOut: 'slideOutUp',
+        animateIn: 'slideInUp',       
+        dots: false,
+        autoplayHoverPause:true,
+        autoplayTimeout:8000
+
+  });   
+
+      var bigGridBox2 = $("#grid-slider").find('.bigGridBox2');
+
+      bigGridBox2.owlCarousel({
+        items:1,
+        loop:true,
+        autoplay:true,
+        margin: 10,
+        //animateOut: 'slideOut',
+        //animateIn: 'slideIn',       
+        dots: false,
+        autoplayHoverPause:true,
+        autoplayTimeout:9000
+
+  }); 
+
+      var bigGridBox1 = $("#grid-slider").find('.bigGridBox1');
+
+      bigGridBox1.owlCarousel({
+        items:1,
+        loop:true,
+        autoplay:true,
+        margin: 0,
+        //animateOut: 'slideOut',
+        //animateIn: 'slideIn',       
+        dots: false,
+        autoplayHoverPause:true,
+        autoplayTimeout:7000
+
+  }); 
+
+}
+
+
+
+
+
+   
+
 
 
 initSlider = function() {
@@ -104,9 +147,11 @@ initSlider = function() {
     onTranslated: moved,
     onDrag: pauseOnDragging
 
-
   }); 
-        console.log("initSlider");
+
+
+
+
 
 
       //Init progressBar where elem is $("#owl-demo")
@@ -170,33 +215,20 @@ function interval() {
 initQuoteSlider = function() {
     var time = 7; // time in seconds
 
-    var $progressBar,
-        $bar, 
-        $elem, 
-        isPause, 
-        tick,
-        percentTime;
-
-
-      var owl = $("#quote-slider").find('.owl-carousel');
+    var owl = $("#quote-slider").find('.owl-carousel');
 
       owl.owlCarousel({
-    items:1,
-    loop:true,
-    autoplay:true,
-    margin: 10,
-    //nav: true,
-    animateIn: 'fadeIn',
-    animateOut: 'fadeOut',
-    dragging: false,
-    dots: false,
-    autoplayTimeout:7000
-
-
+        items:1,
+        loop:true,
+        autoplay:true,
+        margin: 10,
+        //nav: true,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
+        dragging: false,
+        dots: false,
+        autoplayTimeout:7000
   }); 
-        console.log("initQuoteSlider");
-
-
 }
 
 initPackSlider = function() {
@@ -237,7 +269,5 @@ initPackSlider = function() {
 
 
   }); 
-        console.log("initQuoteSlider");
-
 
 }

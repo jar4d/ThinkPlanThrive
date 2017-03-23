@@ -1,111 +1,27 @@
 
 #quiz-header .typeform-widget {
   display: block;
+
   height: 90vh;
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 100%;
 }
 
-.bigGrid{
-  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0)!important;
-  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0)!important;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0)!important;
-  margin: 0px!important;
-  padding: 0px!important;
-}
-
-.bigGridBackground {
-    margin-top: 100%;
-}
-
-.bigGridBackgroundWide {
-    margin-top: 50%;
-}
-
-.box1{
-      background-image: url("vision_book.png");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-}
-
-.box2{
-      background-image: url("thingswelove_placeholder.png");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-}
-
-.box3{
-      background-image: url("instagram_placeholder.png");
-      background-size: 100% 100%;
-}
-
-.box4{
-      background-color: #FF0254;
-      text-align: left;
-}
-
-.boxGrey{
-      background-color: #e8e8e8;
-}
-
-
-/* label color */
-.input-field label {
- color: #FF0254;
- font-size: 2vmin;
-
-}
-/* label focus color */
-.input-field input[type=text]:focus + label {
- color: #FF0254;
-}
-/* label underline focus color */
-.input-field input[type=text]:focus {
- border-bottom: 1px solid #FF0254;
- box-shadow: 0 1px 0 0 #FF0254;
-}
-/* label focus color */
-.input-field input[type=email]:focus + label {
- color: #FF0254;
-}
-/* label underline focus color */
-.input-field input[type=email]:focus {
- border-bottom: 1px solid #FF0254;
- box-shadow: 0 1px 0 0 #FF0254;
-}
-
-.btn{
-   font-size: 2vmin;
-
-}
-
-.bigGridContents {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    text-align:left;
-    padding-top:calc(50% - 25px);
-}
-
-.bigGridContentsWide {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    text-align:left;
-    padding-top:calc(20%);
-}
-
 //Slider
 #main-slider {
   overflow: hidden;
+
 }
 
 
+#main-slider .item {
+  display: block;
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100%;
+}
 
 #main-slider .slider-inner {
   position: absolute;
@@ -118,6 +34,30 @@
 
 }
 
+
+#main-slider .slider-inner h2 {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 11vmin; 
+    color: black; 
+}
+
+#main-slider .slider-inner h3 {
+    font-family: Lato;
+    color: black; 
+    font-size: 4vh; 
+    font-weight: 100;
+
+}
+
+#main-slider .slider-inner h4 {
+    font-family: "Helvetica Neue","Lato",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 140%;
+    color: #262626;
+    margin: 0;
+    line-height: 140%;
+}
 
 #main-slider .slider-inner h2 > span {
   color: #45aed6;
@@ -138,20 +78,6 @@
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: right bottom;
-}
-
-#main-slider .who1 {
-  background-image: url("who1.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: middle middle;
-}
-
-#main-slider .who2 {
-  background-image: url("who2.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: middle middle;
 }
 
 #bar{
@@ -176,6 +102,10 @@
 
 
 
+
+
+
+
 .socialButtonsRow{
 	width: 90%;
 }
@@ -188,7 +118,12 @@ body{
 
 }
 
+p{
+  font-family: Lato;
+  font-size: 2vmin!important;
+  color: black; 
 
+}
 
 main {
 flex: 1 0 auto;
@@ -203,6 +138,31 @@ footer.page-footer{
 
 }
 
+h1{
+font-size: 100pt!important; 
+font-weight: 800;
+color:black!important;
+
+
+}
+
+h2{
+font-size: 4vh!important ;
+font-weight: 600;
+}
+
+h3{  
+font-family: Lato;
+font-size: 4vh; 
+font-weight: 100;
+}
+
+.highlightHeader{
+  background-color: black;
+  color:white;
+  font-size: 4vh; 
+  font-weight: 600;
+}
 
 
 
@@ -291,143 +251,44 @@ img{
     -moz-column-gap: 1.5em;
 }
 
-
-
-
-
-
-    #main-slider .slider-inner h1 {
-        font-family: Lato;
-        color: black; 
-        font-size: 22vmin; 
-        font-weight: 800;
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
     }
-
-    #main-slider .slider-inner h2 {
-        font-family: Lato;
-        font-weight: 300;
-        font-size: 15vmin; 
-        color: black; 
-
-    }
-
-    #main-slider .slider-inner h3 {
-        font-family: Lato;
-        color: black; 
-        font-size: 10vmin; 
-        font-weight: 300;
-        line-height: 120%;
-
-    }
-
-
-    .socialIcon{
-      color: #FF0254;
-      font-size: 5em; 
-    }
-    .bigGridHighlightHeader2{
-    background-color: black;
-    color:white;
-    font-size: 5vmin; 
-    font-weight: 600;
-    text-align: left;
 }
-  .bigGridHighlightHeader1{
-      background-color: black;
-      color:white;
-      font-size: 6.5vmin; 
-      font-weight: 600;
-      text-align: left;
-  }
 
-
-
-@media screen and (max-width: 480px) {
-    #main-slider .item {
-      display: block;
-      height: 50vh;
-      background-repeat: no-repeat;
-      background-position: right bottom;
-      background-size: 100%;
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
     }
+}
 
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
 
-    p{
-    font-family: Lato;
-    font-size: 7vmin;
-    color: black; 
-    line-height: 140%;
-    font-weight: 300;
+@media only screen and (min-width: 1100px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
 
     }
+}
 
-    .highlightHeader{
-    background-color: black;
-    color:white;
-    font-size: 8.5vmin; 
-    font-weight: 600;
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1260px;
     }
-
-  }
-
-@media screen and (min-width: 481px) {
-    #main-slider .item {
-      display: block;
-      height: 75vh;
-      background-repeat: no-repeat;
-      background-position: right bottom;
-      background-size: 100%;
-    }
-
-
-    p{
-    font-family: Lato;
-    font-size: 3vmin;
-    color: black; 
-    line-height: 140%;
-    font-weight: 300;
-
-    }
-
-    .highlightHeader{
-    background-color: black;
-    color:white;
-    font-size: 4.5vmin; 
-    font-weight: 600;
-    }
-  }
-
-@media screen and (min-width: 900px) {
-    #main-slider .item {
-      display: block;
-      height: 75vh;
-      background-repeat: no-repeat;
-      background-position: right bottom;
-      background-size: 100%;
-    }
-
-
-    p{
-    font-family: Lato;
-    font-size: 3.5vmin;
-    color: black; 
-    line-height: 140%;
-    font-weight: 300;
-
-    }
-
-    .highlightHeader{
-    background-color: black;
-    color:white;
-    font-size: 6vmin; 
-    font-weight: 600;
-    }
-  }
-
-
-
-
-
+}
 
 
 

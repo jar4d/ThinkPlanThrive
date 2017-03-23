@@ -1,0 +1,107 @@
+
+
+
+
+
+
+
+
+
+
+
+<!--a lil grid of work and readings-->
+      <div class="row">
+      <span class="highlightHeader">Our latest work.</span>
+      <div class="masonry"> 
+
+        <div class="card">
+               <div class="card-image">
+                  <img src="times.jpg">
+                  <span class="card-title black">Develop a vision</span>
+                </div>
+                <div class="card-content">
+                  <p><b>All you need to build a closer team and a vision for the future.</b> This workshop pack contains all you need to run a fun and productive workshop for your organisation.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#" class="grey-text">Learn more.</a>
+                  <a href="#" class="pink-text ">Order a pack.</a>
+                  <a href="#" class="blue-text">Get us in.</a>
+                </div>
+              </div>
+
+        <div class="card">
+                <div class="card-image">
+                  <img src="times.jpg">
+                  <span class="card-title black">Find your mojo</span>
+                </div>
+                <div class="card-content">
+                  <p>Build better products by understanding the cutomer. This pack demystifies customer centered design, helping you to build things people want.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#" class="grey-text">Learn more.</a>
+                  <a href="#" class="pink-text">Order a pack.</a>
+                  <a href="#" class="blue-text">Get us in.</a>
+                </div>
+              </div>
+
+        <div class="card">
+                <div class="card-image">
+                  <img src="times.jpg">
+                  <span class="card-title black">Build better products</span>
+                </div>
+                <div class="card-content">
+                  <p>Build better products by understanding the cutomer. This pack demystifies customer centered design, helping you to build things people want.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#" class="grey-text">Learn more.</a>
+                  <a href="#" class="pink-text">Order a pack.</a>
+                  <a href="#" class="blue-text">Get us in.</a>
+                </div>
+              </div>
+
+        <div class="card">
+                <div class="card-image">
+                  <img src="map.jpg">
+                  <span class="card-title grey darken-2">Read: 5 great tools for planning</span>
+                </div>
+                <div class="card-content">
+                  <p>Build better products by understanding the cutomer. This pack demystifies customer centered design, helping you to build things people want.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#" class="grey-text">Read it.</a>
+                  <a href="#" class="pink-text">Post it.</a>
+                </div>
+              </div>
+
+        <div class="card">
+                <div class="card-image">
+                  <img src="growth.jpg">
+                  <span class="card-title grey darken-2">Read: A template for growth.</span>
+                </div>
+                <div class="card-content">
+                  <p>Build better products by understanding the cutomer. This pack demystifies customer centered design, helping you to build things people want.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#" class="grey-text">Learn more.</a>
+                  <a href="#" class="pink-text">Order a pack.</a>
+                  <a href="#" class="blue-text">Get us in.</a>
+                </div>
+              </div>
+
+        <div class="card">
+                <div class="card-image">
+                  <img src="customer.jpg">
+                  <span class="card-title grey darken-2">Read: Get closer to your customers</span>
+                </div>
+                <div class="card-content">
+                  <p>Build better products by understanding the cutomer. This pack demystifies customer centered design, helping you to build things people want.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#" class="grey-text">Learn more.</a>
+                  <a href="#" class="pink-text">Order a pack.</a>
+                  <a href="#" class="blue-text">Get us in.</a>
+                </div>
+        </div>
+        </div>
+    </div>
+

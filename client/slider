@@ -1,0 +1,51 @@
+<section id="quote-slider">
+        <div class="owl-carousel">
+
+            <div class="row">
+             <div class="item">
+                <div class="slider-inner">
+                            <div class="carousel-content">
+                                <div class="row">
+                                    <div class="col s12 center-align">
+                                          <h2 class="grey-text text-darken-1">"Zomg. Think Build Thrive saved my life and my company."</h2>
+                                          <h3 class="grey-text">Clara, BCG.</h3>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+                </div><!--/.item-->
+              </div>
+
+            <div class="row">
+             <div class="item">
+                <div class="slider-inner">
+                            <div class="carousel-content">
+                                <div class="row">
+                                    <div class="col s12 center-align">
+                                          <h2 class="grey-text text-darken-1">"Straightforward, practical advice to grow our customer base. Thanks Think Build Thrive!"</h2>
+                                          <h3 class="grey-text">Dave, AA.</h3>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+                </div><!--/.item-->
+              </div>
+
+             <div class="row"> 
+             <div class="item">
+                <div class="slider-inner">
+                            <div class="carousel-content">
+                                <div class="row">
+                                    <div class="col s12 center-align">
+                                          <h2 class="grey-text text-darken-1">"We use Think Build Thrive's vision pack every time we start a new project."</h2>
+                                          <h3 class="grey-text">Simon, Calexo.</h3>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+                </div><!--/.item-->
+              </div>
+            </div>
+
+   </section><!--/#main-slider-->
+

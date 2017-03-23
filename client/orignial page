@@ -1,0 +1,65 @@
+<template name="grid">
+<!--our lovely people-->
+<section id="grid">
+  <span class="highlightHeader">Interesting things.</span>
+
+      <div class="row bigGrid">
+
+          <div class="col s12 m12 l12 ">
+
+              <div class="col s12 m6 l6 bigGrid">
+              <div class="card">
+                <div class="card-content waves-effect waves-block waves-light">
+                    <div class="bigGridBackground orange activator"> </div>
+                    <a href="#x" class="bigGridContents activator blue darken-2 white-text truncate">FURP</a>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Bob<i class="material-icons right">close</i></span>
+                  <p>Trained in the mountains of Tibet, Bob is a karate master.</p>
+                </div>
+              </div>
+              </div> 
+
+            <div class="col s6 m3 l3 bigGrid">
+              <div class="card bigGrid">
+                <div class="card-content waves-effect waves-block waves-light">
+                    <div class="bigGridBackground orange activator"> </div>
+                    <a href="#x" class="bigGridContents activator orange darken-2 white-text truncate">FURP2</a>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Bob<i class="material-icons right">close</i></span>
+                  <p>Trained in the mountains of Tibet, Bob is a karate master.</p>
+                </div>
+              </div>
+              </div> 
+
+            <div class="col s6 m3 l3 bigGrid">
+              <div class="card bigGrid">
+                <div class="card-content waves-effect waves-block waves-light">
+                    <div class="bigGridBackground orange activator"> </div>
+                    <a href="#x" class="bigGridContents activator pink darken-2 white-text truncate">FURP3</a>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Bob<i class="material-icons right">close</i></span>
+                  <p>Trained in the mountains of Tibet, Bob is a karate master.</p>
+                </div>
+              </div>
+              </div> 
+
+            <div class="col s6 m3 l3 bigGrid">
+              <div class="card bigGrid">
+                <div class="card-content waves-effect waves-block waves-light">
+                    <div class="bigGridBackground2 orange activator"> </div>
+                    <a href="#x" class="bigGridContents activator blue darken-2 white-text truncate">FURP</a>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Bob<i class="material-icons right">close</i></span>
+                  <p>Trained in the mountains of Tibet, Bob is a karate master.</p>
+                </div>
+              </div>
+              </div> 
+
+            </div>
+            </div>
+</section><!--end us-->
+</template>
